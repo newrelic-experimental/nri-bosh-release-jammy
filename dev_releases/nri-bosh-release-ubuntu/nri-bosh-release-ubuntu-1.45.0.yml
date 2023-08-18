@@ -1,0 +1,21 @@
+name: nri-bosh-release-ubuntu
+version: 1.45.0
+commit_hash: c45d0aa
+uncommitted_changes: true
+jobs:
+- name: install-nri
+  version: a0729a0696ac4d293a5c0a96ad5e7a93432152f605a86a06c0f88d0b53174860
+  fingerprint: a0729a0696ac4d293a5c0a96ad5e7a93432152f605a86a06c0f88d0b53174860
+  sha1: sha256:29cbb9f743142123410faa4ca6bd13426911db1eef4097e29e9e20afc45e0c69
+  packages:
+  - nr-infra
+packages:
+- name: nr-infra
+  version: c54273b258476e8f79f119fa626a3f0a39f51f30b81adb0886137e6bb06122c7
+  fingerprint: c54273b258476e8f79f119fa626a3f0a39f51f30b81adb0886137e6bb06122c7
+  sha1: sha256:565719ba0e28b80cc8f9a81f78a92ea3476393dd192ece34660b8f0a9b6814f3
+  dependencies: []
+license:
+  version: 4d8e5bb096d43b9e29cea9a4163a300c69499ca05094cf4d9643a9131353c214
+  fingerprint: 4d8e5bb096d43b9e29cea9a4163a300c69499ca05094cf4d9643a9131353c214
+  sha1: sha256:d915e2892c3c6a3fb2d9beb2448df7e9bfd15564b199c60c0cdf0c7f1ad9e81e

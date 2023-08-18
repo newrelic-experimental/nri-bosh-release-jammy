@@ -1,0 +1,5 @@
+name: nri-bosh-release-ubuntu
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /Users/shahram/projects/manulife/bosh_release/shahramk/blobstore

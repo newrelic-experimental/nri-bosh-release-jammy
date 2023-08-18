@@ -1,0 +1,6 @@
+set -ex
+
+export INFRA_VERSION="1.45.0"
+
+echo "copying the infra deb version ${INFRA_VERSION} to install target"
+cp newrelic-infra_${INFRA_VERSION}_amd64.deb ${BOSH_INSTALL_TARGET}/newrelic-infra_${INFRA_VERSION}_amd64.deb
