@@ -1,4 +1,4 @@
-name: nri-bosh-release-ubuntu
+name: nri-bosh-release-jammy
 blobstore:
   provider: local
   options:
