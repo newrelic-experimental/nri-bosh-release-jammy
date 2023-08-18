@@ -4,7 +4,7 @@
 
 > A bosh release for deploying the New Relic Infrastructure agent to CLoud Foundry
 
-This is a self contained bosh release for installing the New Relic Infrastructure agent on Cloud Foundry. It includes the [.deb] package as a blob and has an install script that installs the package. It is a standard BOSH install package for Ubuntu Xenial.
+This is a self contained bosh release for installing the New Relic Infrastructure agent on Cloud Foundry. It includes the [.deb] package as a blob and has an install script that installs the package. It is a standard BOSH install package for Ubuntu Jammy.
 
 The release is meant to be installed as an addon. In order to facilitate that, a sample runtime.yml file is included with properties required for the installation procedure.
 
@@ -15,7 +15,7 @@ The release is meant to be installed as an addon. In order to facilitate that, a
 
 To use, upload the release:
 ```bash
-bosh upload-release ~/Downloads/nr-bosh-release-xenial-1.20.7.tgz
+bosh upload-release ~/Downloads/nr-bosh-release-jammy-1.45.0.tgz
 ```
 
 ### Update runtime config
@@ -55,12 +55,12 @@ Finally, use <strong>`"bosh deploy"`</strong> command to redeploy the release.
 ### Build the release
 - clone this repo
 ```bash
-git clone https://github.com/newrelic/nri-bosh-release-xenial.git
+git clone https://github.com/newrelic-experimental/nri-bosh-release-jammy
 ```
 
 - change directory to the local repo you just cloned
 ```bash
-cd nri-bosh-release-xenial
+cd nri-bosh-release-jammy
 ```
 
 - run the following command to capture the previous infrastructure agent file name and version
@@ -96,13 +96,13 @@ bosh add-blob newrelic-infra_systemd_<NEW_VERSION>_amd64.deb newrelic-infra_<NEW
 
 - run the following command to build the release package
 ```bash
-bosh create-release --version=<NEW_VERSION> --tarball=release/nri-bosh-release-xenial-<NEW_VERSION>.tgz --[force | final]
+bosh create-release --version=<NEW_VERSION> --tarball=release/nri-bosh-release-jammy-<NEW_VERSION>.tgz --[force | final]
 ```
 
 
 ## Issues / Enhancement Requests
 
-Issues and enhancement requests can be submitted in the [Issues tab of this repository](https://github.com/newrelic/nri-bosh-release-xenial/issues). Please search for and review the existing open issues before submitting a new issue.
+Issues and enhancement requests can be submitted in the [Issues tab of this repository](https://github.com/newrelic-experimental/nri-bosh-release-jammy/issues). Please search for and review the existing open issues before submitting a new issue.
 
 
 ## Contribute
@@ -120,4 +120,4 @@ If you believe you have found a security vulnerability in this project or any of
 If you would like to contribute to this project, review [these guidelines](./CONTRIBUTING.md).
 
 ## License
-nri-bosh-release-xenial is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
+nri-bosh-release-jammy is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
