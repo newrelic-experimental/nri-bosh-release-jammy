@@ -1,15 +1,15 @@
 releases:
-- name: nri-bosh-release-ubuntu
+- name: nri-bosh-release-jammy
   version: 1.45.0
 
 addons:
-- name: nri-bosh-release-ubuntu
+- name: nri-bosh-release-jammy
   jobs:
   - name: install-nri
-    release: nri-bosh-release-ubuntu
+    release: nri-bosh-release-jammy
     properties:
       infra_agent:
-        license_key: c3dfd8b4b56a0fd4f22999a31722f977FFFFNRAL
+        license_key: 
         environment: jammy
         agent_props:
           # prop: gets added to /etc/newrelic-infra.yml config file
