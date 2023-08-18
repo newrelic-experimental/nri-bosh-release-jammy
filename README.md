@@ -1,6 +1,6 @@
 [![Community Project header](https://github.com/newrelic/opensource-website/raw/master/src/images/categories/Community_Project.png)](https://opensource.newrelic.com/oss-category/#community-project)
 
-# NRI BOSH Release - Xenial
+# NRI BOSH Release - Jammy
 
 > A bosh release for deploying the New Relic Infrastructure agent to CLoud Foundry
 
