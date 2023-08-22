@@ -1,12 +1,12 @@
 releases:
-- name: nri-bosh-release-jammy
+- name: nri-bosh-release-ubuntu
   version: 1.45.0
 
 addons:
-- name: nri-bosh-release-jammy
+- name: nri-bosh-release-ubuntu
   jobs:
   - name: install-nri
-    release: nri-bosh-release-jammy
+    release: nri-bosh-release-ubuntu
     properties:
       infra_agent:
         license_key: 
@@ -14,8 +14,7 @@ addons:
         agent_props:
           # prop: gets added to /etc/newrelic-infra.yml config file
         custom_attributes:
-          platform: test
-          foundation: test
+          # attr: add any custom attributes here
   include:
     stemcell:
     - os: ubuntu-jammy
