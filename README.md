@@ -102,7 +102,7 @@ bosh add-blob newrelic-infra_systemd_<NEW_VERSION>_amd64.deb newrelic-infra_<NEW
 	packages/nr-infra/spec
 ```
 
-- make sure the <strong>version</strong> property in runtime.yml matches the release version you're creating
+- make sure the <strong>version</strong> property in [runtime.yml](https://github.com/newrelic-experimental/nri-bosh-release-jammy/blob/main/runtime.yml) matches the release version you're creating
 
 - run the following command to build the release package
 ```bash
