@@ -11,6 +11,12 @@ The release is meant to be installed as an addon. In order to facilitate that, a
 
 ## Installation
 
+### Download the release file
+
+```
+wget https://github.com/newrelic-experimental/nri-bosh-release-jammy/raw/main/release/nri-bosh-release-ubuntu-1.45.0.tgz
+```
+
 ### Upload the release
 
 To use, upload the release:
