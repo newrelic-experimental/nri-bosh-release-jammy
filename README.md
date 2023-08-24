@@ -52,7 +52,7 @@ Finally, use <strong>`"bosh deploy"`</strong> command to redeploy the release.
 - You could filter by tags and all other properties to view only the nodes that are reporting from Cloud Foundry Foundation
 
 
-## Build & Release
+## Build & Release -- TO update with latest version of the Infrastructure Systemd Agent
 
 ### Prerequisites
 - make sure `git cli` is installed on your system
@@ -79,7 +79,7 @@ bosh blobs
 bosh remove-blob <PREVIOUS_INFRASTRUCTURE_BLOB_PATH>
 ```
 
-- download the latest <strong>"amd"</strong> build for Infrastructure agent (e.g. `newrelic-infra_systemd_1.20.7_amd64.deb`)
+- download the latest <strong>"amd"</strong> build for Infrastructure agent (e.g. `newrelic-infra_systemd_1.45.0_amd64.deb`). You can find the latest version of the [infra "systemd" agent here](https://download.newrelic.com/infrastructure_agent/linux/apt/pool/main/n/newrelic-infra/).
 ```bash
 wget -q https://download.newrelic.com/infrastructure_agent/linux/apt/pool/main/n/newrelic-infra/newrelic-infra_systemd_${new_agent_version}_amd64.deb
 ```
@@ -91,7 +91,7 @@ wget -q https://download.newrelic.com/infrastructure_agent/linux/apt/pool/main/n
 bosh add-blob newrelic-infra_systemd_<NEW_VERSION>_amd64.deb newrelic-infra_<NEW_VERSION>_amd64.deb
 ```
 
-- edit the following files and update the infrastructure agent version to the new version you downloaded
+- CRITICAL: Edit the following files and update the infrastructure agent version to the new version you downloaded
 ```
 	jobs/install-nri/templates/nri.sh
 	packages/nr-infra/packaging
