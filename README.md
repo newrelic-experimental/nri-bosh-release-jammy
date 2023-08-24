@@ -8,6 +8,10 @@ This is a self contained bosh release for installing the New Relic Infrastructur
 
 The release is meant to be installed as an addon. In order to facilitate that, a sample runtime.yml file is included with properties required for the installation procedure.
 
+#### There are two parts to this document:
+1. Installation using version 1.45.0 (latest as of 08/24/2023) of the [New Relic Infrastructure Agent](https://download.newrelic.com/infrastructure_agent/linux/apt/pool/main/n/newrelic-infra/).
+2. How to [build and update](https://github.com/newrelic-experimental/nri-bosh-release-jammy/blob/main/README.md#build--release----to-update-with-latest-version-of-the-infrastructure-systemd-agent) the release with the latest version of the [Infrastructure Agent](https://download.newrelic.com/infrastructure_agent/linux/apt/pool/main/n/newrelic-infra/).
+
 
 ## Installation
 
